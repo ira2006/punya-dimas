@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Ulang Tahun</title>
+    <style>
+        /* CSS untuk menyembunyikan pesan */
+        .hidden {
+            display: none;
+        }
+
+        .message {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selamat Ulang Tahun, sayangku!</h1>
+
+    <!-- Tombol untuk menampilkan dan menyembunyikan pesan -->
+    <button id="showMessageBtn">Tampilkan Pesan Khusus</button>
+
+    <!-- Pesan khusus yang akan ditampilkan atau disembunyikan -->
+    <div class="message hidden" id="specialMessage">
+        <p>Sayang,</p>
+        <p>
+            Setiap hari bersamamu adalah anugerah yang tidak pernah bisa aku lukiskan dengan kata-kata. Tapi hari ini, hari spesialmu, aku ingin kamu tahu betapa dalamnya perasaanku untukmu. Di setiap tawa, setiap senyum, dan setiap canda, aku menemukan kebahagiaan yang tidak pernah aku bayangkan sebelumnya. Kamu adalah alasan aku terus bersemangat, dan aku bersyukur sampai detik ini.
+        </p>
+        <p>
+            Di usiamu yang ke-19 ini, aku ingin kamu tahu betapa bangganya aku melihatmu tumbuh menjadi pribadi yang penuh cinta. Kamu telah melewati banyak hal, dan aku percaya masih banyak impian dan keajaiban yang menantimu di masa depan. Aku berharap setiap langkahmu selalu diberkahi kebahagiaan dan cinta, sama seperti cinta yang selalu kamu bagikan padaku. Jangan pernah khawatir aku akan pergi, aku selalu menunggumu pulang dim, setiap saat!!
+        </p>
+        <p>
+            Terima kasih telah menjadi bagian dari hidup ira ya, terima kasih sudah membuat ira merasa dicintai dengan cara yang begitu tulus. Ira sayang ayang, selalu. Selamat ulang tahun, sayangku. Semoga segala impian ayang tercapai, dan jangan pernah lupa bahwa ira akan selalu ada di samping ayang sampai detik ini, merayakan setiap momen sama ayang.
+        </p>
+        <p>
+            Selamat merayakan hidupmu, cintaku. Ayo kita jalani semua bareng-bareng.
+        </p>
+        <p>Dengan penuh cinta,</p>
+        <p>[Wanitamu, Ira]</p>
+    </div>
+
+    <script>
+        // JavaScript untuk mengontrol tampilan pesan
+        document.getElementById("showMessageBtn").addEventListener("click", function() {
+            const specialMessage = document.getElementById("specialMessage");
+            if (specialMessage.classList.contains("hidden")) {
+                specialMessage.classList.remove("hidden");
+                this.textContent = "Sembunyikan Pesan Khusus";
+            } else {
+                specialMessage.classList.add("hidden");
+                this.textContent = "Tampilkan Pesan Khusus";
+            }
+        });
+    </script>
+
+</body>
+</html>
